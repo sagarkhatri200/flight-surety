@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>        
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20">
+            
+        </div>
+        <div class="row top-20">
+            <h4>Add Airline</h4>
+            <div class="container activity">
+                <label class="form">Airline Address</label> <input type="text" id="airline-address">
+            <label class="form">Airline Name</label> <input type="text" id="airline-name"> <br><btn class="btn btn-primary" id="add-airline">Add Airline</btn>
+            </div>
+            <!-- <div class="container activity">
+                <label class="form">Airline Name</label> <input type="text" id="airline-address-search"> (10 ETH required) <br><btn class="btn btn-primary" id="get-airline">Get Airline</btn>
+            </div> -->
+        </div>
+        <div class="row top-20">
+            <h4>Fund Airline</h4>
+            <div class="container activity">
+                <label class="form">Airline Address</label> <input type="text" id="fund-airline-airline-address">
+             (10 ETH required) <br><btn class="btn btn-primary" id="fund-airline">Fund Airline</btn>
+            </div>
+            <!-- <div class="container activity">
+                <label class="form">Airline Name</label> <input type="text" id="airline-address-search"> (10 ETH required) <br><btn class="btn btn-primary" id="get-airline">Get Airline</btn>
+            </div> -->
+        </div>
+        <div class="row top-20">
+            <h4>Add Flight</h4>
+            <div class="container activity">
+           
+            <label class="form">Airline</label> 
+            <select  id="add-flight-airline-options">
+                <option selected=1>No available Airlines</option>
+            </select>
+            <input type="text" id="add-flight-flight-number"> 
+            <btn class="btn btn-primary" id="add-flight">Add Flight</btn>
+            </div>
+        </div>
+        <div class="row top-20">
+            <h4>Buy Insurance</h4>
+            <div class="container activity">
+           
+            <label class="form">Flight</label>
+            <select  id="buy-insurance-flight-number-options">
+                <option selected=1>No Available Flights</option>
+            </select>
+            <label class="form">Amount(ether)</label>
+            <input type="text" id="buy-insurance-insurance-amount" /> 
+              <btn class="btn btn-primary" id="buy-insurance">Buy Insurance</btn>
+            </div>
+        </div>
+        <div class="row top-20">
+            <h4>Oracle Submission</h4>
+            <div class="container activity">
+            <select  id="oracle-submission-flight-number-options">
+                <option selected=1>No Available Flights</option>
+            </select>
+            <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+            </div>
+        </div>
+        <div class="row top-20">
+            <h4>View Flight Status</h4>
+            <div class="container activity">
+           
+            <label class="form">Flight</label>
+            <select  id="view-status-flight-number-options">
+                <option selected=1>No Available Flights</option>
+            </select>
+            <btn class="btn btn-primary" id="view-status">View Status</btn>
+            </div>
+        </div>
+        <div class="row top-20">
+            <h4>Check Credits</h4>
+            <div class="container activity">
+           
+            <btn class="btn btn-primary" id="check-credit">Check Credits</btn>
+            </div>
+        </div>
+        <div class="row top-20">
+            <h4>Withdraw Balance</h4>
+            <div class="container activity">
+           
+                <label class="form">Amount(ether)</label> <input type="text" id="withdraw-credit-amount"> <btn class="btn btn-primary" id="withdraw-credit">Withdraw</btn>
+            </div>
+        </div>
+        
+    </main>
+
+</body>
+
+</html>
